@@ -1,91 +1,9 @@
 html{
-    box-sizing: border-box;
-    width:960px;
-    margin: 0 auto;
-  
-
+box-sizing: border-box;
+width:960px;
+margin: 0 auto;
 }
 body{
-    background-image: url("http://800appliance.com/images/fakebodyfaded.png");
-    
-    width:960px;
-  margin: 0 auto;
-}
-#title{
-   color:rgb(255, 0, 0);
-background-image: url("http://800appliance.com/images/banner.png");
 width:960px;
-height: 200px;
-}
-#titleText{
-font-family: 'Saira Stencil One', cursive;
-font-size: 110px;
-text-shadow: 10px 10px 5px #000; 
-text-align: center;
--webkit-text-stroke: 1px black;
-}
-
-#questionTextDiv{
-   color: yellow;
-   font-family: 'Baloo', cursive;
-    font-size: 30px;
-    text-shadow: 4px 2px 5px #000; 
-    text-align: center;
-    /* -webkit-text-stroke: 1px black; */
-}
-#questionDiv{
-    width: 960px;
-      background-color: red;
-    margin: 15px auto;
-    border-radius: 30px
-   
-    
-}
-#gameStatusDiv{
-    width: 960px;
-    color: white;
-      background-color: black;
-    margin: 0px auto;
-    border-radius: 0px;
-    font-size: 30px;
-    text-align: center;
-    vertical-align: middle;
-    
-}
-#scoreDiv{
-    width: 960px;
-    margin: 10px auto;
-    font-family: 'Baloo', cursive;
-    color: white;
-    background-color: blue;
-    font-size: 30px;
-    vertical-align: middle;
-    text-align: center;
-display: none;
-
-
-}
-#timerDiv{
-    color:white;
-    font-size: 50px;
-text-align: center;
-    
-}
-#timeDiv{
-    color:white;
-    font-size: 50px;
-    }
-#startStopButtonDiv{
-    width: 960px;
-    margin: 0px auto;
-    
-}
-button{
-    width: 960px;
-    height: 50px;
-    font-family: 'Baloo', cursive;
-      font-size: 30px;
-  text-align: center;
-  border-radius: 10px;
-  
+margin: 0 auto;
 }
