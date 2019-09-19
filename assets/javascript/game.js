@@ -1,4 +1,4 @@
-var buttonChoices = ["Demolition Implosions", "Baby Goats", "Elephants", "Fish"];
+var buttonChoices = ["Demolition Implosions", "Fail", "Bike Crash", "Baby Goats", "Elephants", "Fish"];
 var currentTopic="";
 
 
@@ -13,7 +13,8 @@ function createButtons()
 
 
 document.getElementById("addTopic").addEventListener("click", function () {
-    buttonChoices.push( document.getElementById("topic").value);
+    // buttonChoices.push( document.getElementById("topic").value);
+    buttonChoices.push( buttonChoices.push( document.getElementById("topic").value) );
     createButtons();
     getGiphyData( document.getElementById("topic").value);
     console.log(document.getElementById("topic").value);

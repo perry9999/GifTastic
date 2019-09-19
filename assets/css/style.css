@@ -2,10 +2,12 @@ html{
 box-sizing: border-box;
 /* width:960px; */
 margin: 0 auto;
+/* background-image: url("assets/images/faded-sydney-rae-qZXxmajoHx0-unsplash.jpg") */
 }
 body{
 /* width:960px; */
 margin: 0 auto;
+/* background-image: url("assets/images/faded-sydney-rae-qZXxmajoHx0-unsplash.jpg") */
 }
 .clear{
     clear: both;
@@ -52,7 +54,6 @@ margin:10px;
 .gifTitleDiv{
 margin: 0 auto;
 font-weight: bolder;
-
 padding-bottom:7px;
 font-size:20px;
 }
