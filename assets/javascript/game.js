@@ -1,5 +1,6 @@
-
 var buttonChoices = ["Demolition Implosions", "Baby Goats", "Elephants", "Fish"];
+var currentTopic="";
+
 
 function createButtons()
     {
@@ -14,11 +15,16 @@ function createButtons()
 document.getElementById("addTopic").addEventListener("click", function () {
     buttonChoices.push( document.getElementById("topic").value);
     createButtons();
+    getGiphyData( document.getElementById("topic").value);
+    console.log(document.getElementById("topic").value);
 });
 
 function getGiphyData(topic) {
     var newGifInnerHtml = "";
     document.getElementById("results").innerHTML = "Gif's coming Soon!";
+    currentTopic=topic;
+
+
 
     // Selecting the input element and get its value 
     // var newTopic = document.getElementById("topic").value;
@@ -37,9 +43,10 @@ function getGiphyData(topic) {
         for (var i = 0; i < response.data.length; i++) {
             var newDiv = "";
 
-            newDiv =" <div class='gifBox'> <img class='gifDiv' id='gif-" + i + "' onclick='stopMotion(" + i + ")' now='moving' stillUrl='" + response.data[i].images.fixed_height_still.url + "' movingUrl='" + response.data[i].images.fixed_height.url + "' src='" + response.data[i].images.fixed_height.url + "'><div class='gifTitleDiv'>Rated: "+response.data[i].rating+"</div></div>";
+            newDiv =" <div class='gifBox'> <img class='gifDiv' topic='"+topic+"' id='gif-" + i + "' onclick='stopMotion(" + i + ")' now='moving' stillUrl='" + response.data[i].images.fixed_height_still.url + "' movingUrl='" + response.data[i].images.fixed_height.url + "' src='" + response.data[i].images.fixed_height.url + "'><div class='gifTitleDiv'>\""+topic+"\"  Rated: "+ response.data[i].rating +"</div></div>";
             document.getElementById("results").innerHTML += newDiv;
         }
+    
     });
 }
 
