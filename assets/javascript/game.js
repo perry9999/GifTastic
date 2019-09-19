@@ -30,7 +30,7 @@ function getGiphyData(topic) {
     var response = [];
     response.length = 0;
     $.ajax({
-        url: "https://api.giphy.com/v1/gifs/search?api_key=cb4rAUUugv4ls0srWM88sPsfKiYgFIyg&q=" + topic + "&offset=0&rating=R&lang=en&limit=10",
+        url: "https://api.giphy.com/v1/gifs/search?api_key=cb4rAUUugv4ls0srWM88sPsfKiYgFIyg&q=" + topic + "&offset=11&rating=R&lang=en&limit=10&random=4564&weirdness=10",
         method: "GET"
     }).then(function (response) {
         console.log(response);
